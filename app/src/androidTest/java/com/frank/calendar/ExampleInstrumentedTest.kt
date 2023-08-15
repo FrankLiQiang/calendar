@@ -1,4 +1,4 @@
-package com.frank.calendar2
+package com.frank.calendar
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

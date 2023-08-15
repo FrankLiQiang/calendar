@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.frank.calendar2'
+    namespace 'com.frank.calendar'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.frank.calendar2"
+        applicationId "com.frank.calendar"
         minSdk 31
         targetSdk 33
         versionCode 1

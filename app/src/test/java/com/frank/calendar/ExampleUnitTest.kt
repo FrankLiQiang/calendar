@@ -1,4 +1,4 @@
-package com.frank.calendar2
+package com.frank.calendar
 
 import org.junit.Test
 

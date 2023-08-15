@@ -1,10 +1,10 @@
-package com.frank.calendar2
+package com.frank.calendar
 
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.frank.calendar2.databinding.ActivityMainBinding
+import com.frank.calendar.databinding.ActivityMainBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.Calendar
