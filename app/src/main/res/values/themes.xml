@@ -1,0 +1,15 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Theme.Calendar2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.Calendar2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Calendar2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Calendar2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

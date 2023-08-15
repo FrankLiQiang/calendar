@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Wrap the DrawerLayout with FrameLayout to use the same View type for the same view ID
+across the layout configurations
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:gravity="center"
+        android:textSize="130sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/week"
+        android:layout_above="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="chooseDate"
+        android:textColor="@color/teal_700"
+        android:textSize="35sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="50sp">
+    </TextView>
+</RelativeLayout>
