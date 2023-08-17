@@ -1,6 +1,6 @@
 <resources >
     <!-- Base application theme. -->
-    <style name="Theme.Calendar2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Calendar2" parent="Theme.AppCompat.DayNight.NoActionBar">
     </style>
     <style name="Theme.Calendar2.NoActionBar">
         <item name="windowActionBar">false</item>
