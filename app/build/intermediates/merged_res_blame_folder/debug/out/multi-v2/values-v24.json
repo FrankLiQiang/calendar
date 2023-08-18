@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.frank.calendar.app-mergeDebugResources-3:/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "C:\\APP\\gradle\\caches\\transforms-3\\1936491f7f14d9d5607afabb3db8f3b0\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}
