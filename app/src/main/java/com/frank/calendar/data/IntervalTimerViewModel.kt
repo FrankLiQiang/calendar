@@ -73,8 +73,8 @@ class IntervalTimerViewModel(private val timer: Timer) : ObservableViewModel() {
         if (currentDateNum != newCurrentDate) {
             val weekDate = getNowWeek()
             dateColor.set(weekDate.startsWith("星期"))
-            currentDate.set(getNowDate() + "  " + weekDate)
-            nongliDate.set(getNongLi() + getLeftDays())
+            currentDate.set("${getNowDate()}  $weekDate")
+            nongliDate.set("${getNongLi()}  ${getLeftDays()}")
             currentDateNum = newCurrentDate
         }
     }
