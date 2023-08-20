@@ -81,11 +81,11 @@ class IntervalTimerViewModel(private val timer: Timer) : ObservableViewModel() {
 
     fun getNongLi(): String {
         val calendar: Calendar = Calendar.getInstance()
-        return "农历 " + LunarCalendar.getLunarText(
+        return "农历 ${LunarCalendar.getLunarText(
             calendar.get(Calendar.YEAR),
             calendar.get(Calendar.MONTH) + 1,
             calendar.get(Calendar.DAY_OF_MONTH)
-        )
+        )}"
     }
 
     fun getLeftDays(): String {
@@ -96,10 +96,7 @@ class IntervalTimerViewModel(private val timer: Timer) : ObservableViewModel() {
         cNow.set(Calendar.MILLISECOND, 0)
         val diff = toDate.timeInMillis - cNow.timeInMillis
         val leftDays = TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS).toInt()
-        if (leftDays > 0) {
-            return "  还剩 " + leftDays + " 天"
-        }
-        return ""
+        return if (leftDays > 0) "  还剩 $leftDays 天" else ""
     }
 
     fun getNowWeek(): String {
@@ -113,7 +110,7 @@ class IntervalTimerViewModel(private val timer: Timer) : ObservableViewModel() {
 
         val day: Int = calendar.get(Calendar.DAY_OF_WEEK)
         val weekString = "日一二三四五六"
-        return "星期" + weekString.substring(day - 1, day)
+        return "星期${weekString.substring(day - 1, day)}"
     }
 
     fun getNowDate(): String? {
